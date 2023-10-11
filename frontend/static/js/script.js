@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
             if (response.ok) {
                 return response.json();
             } else {
-                throw new Error('Failed to add todo item.');
+                throw new Error('Failed to get todo items.');
             }
         })
         .then(data => {
